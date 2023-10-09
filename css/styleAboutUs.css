@@ -1,0 +1,206 @@
+@media (max-width:430px) {
+    .img2-reponsive {
+        margin-bottom: 10vh !important;
+    }
+    .img6 {
+        width: 100% !important;
+        left: -15% !important;
+        height: 400px !important;
+        top: -140% !important;
+    }
+    .ss-end>img {
+        width: 100% !important;
+    }
+    .ss-cuoi {
+        margin-top: 0 !important;
+    }
+}
+
+.ket-noi {
+    position: absolute;
+    width: 20%;
+    top: 79%;
+    left: 64%;
+}
+
+.ss-end-element::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    animation: identifier 3s infinite ease;
+}
+
+.ss-end-element::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    left: 60%;
+    top: 75%;
+    box-shadow: #191F3A 10px inset;
+    animation: identifier 3s infinite ease 2s;
+}
+
+@keyframes identifier {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img1 {
+    position: absolute;
+    background-color: red;
+    width: 70%;
+    height: 100%;
+    top: -5%;
+    left: 5%;
+    transform: translate(300%);
+}
+
+.img2 {
+    position: absolute;
+    background-color: #363E26;
+    width: 70%;
+    height: 105%;
+    top: 5%;
+    left: -5%;
+    transform: translate(-300%);
+}
+
+.img3 {
+    position: absolute;
+    background-color: blueviolet;
+    width: 70%;
+    height: 105%;
+    top: 5%;
+    left: 5%;
+    transform: translate(300%);
+}
+
+.img4 {
+    position: absolute;
+    background-color: blanchedalmond;
+    width: 70%;
+    height: 80%;
+    top: -7%;
+    left: -5%;
+    transform: translate(-300%);
+}
+
+.img5 {
+    position: absolute;
+    background-color: #373F26;
+    width: 140%;
+    height: 80%;
+    top: 40%;
+    left: 80%;
+    z-index: 0;
+}
+
+.img6 {
+    position: absolute;
+    background-color: #191F3A;
+    width: 80%;
+    height: 110%;
+    top: -7%;
+    left: -45%;
+}
+
+.hinhTron {
+    position: absolute;
+    background-color: #272A2C;
+    width: 45%;
+    height: 55%;
+    top: -30%;
+    left: 10%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.actionImg3 {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    left: 10%;
+    top: -20%;
+    background-size: cover;
+}
+
+.img {
+    position: relative;
+}
+
+.actionRight {
+    animation: RightFly 2s forwards;
+}
+
+.actionLeft {
+    animation: leftFly 2s forwards;
+}
+
+.actionTop {
+    animation: topFly 2s forwards;
+}
+
+.actionBottom {
+    animation: bottomFly 2s forwards;
+}
+
+@keyframes bottomFly {
+    from {
+        opacity: 0;
+        transform: translateY(-300%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes leftFly {
+    from {
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes RightFly {
+    from {
+        opacity: 0;
+        transform: translateX(300%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes topFly {
+    from {
+        opacity: 0;
+        transform: translateY(300%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

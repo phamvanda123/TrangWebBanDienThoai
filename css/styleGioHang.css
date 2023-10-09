@@ -1,0 +1,9 @@
+@media (max-width:430px) {
+    .table-cart .row .col-sm-2 {
+        width: 16% !important;
+        font-size: small;
+    }
+    .col-thu-2 {
+        margin-left: 0 !important;
+    }
+}

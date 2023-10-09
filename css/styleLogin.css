@@ -1,0 +1,97 @@
+.from-dang-nhap::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: -50%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, red, #45f3ff);
+    animation: xoay 6s linear infinite;
+}
+
+@media (max-width:430px) {
+    .from-dang-nhap {
+        width: 80% !important;
+    }
+    .from-dang-ky {
+        width: 80% !important;
+    }
+    .quen-mat-khau {
+        position: absolute;
+        width: 150px;
+        right: 0%;
+    }
+}
+
+.from-dang-nhap .card-body {
+    background-color: #191F3A;
+    z-index: 10;
+    inset: 10%;
+}
+
+.from-dang-nhap::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: -50%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, green, #45f3ff);
+    animation: xoay 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.from-dang-ky .card-body {
+    background-color: #191F3A;
+    z-index: 15 !important;
+    inset: 10%;
+}
+
+.from-dang-ky::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: -50%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, yellow, #45f3ff);
+    animation: xoay 6s linear infinite;
+}
+
+.from-dang-ky::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: -50%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: xoay 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes xoay {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    overflow: hidden;
+    background-color: black;
+}
+
+.ss-login {
+    background-color: #182870;
+}
+
+.ss-login .card span {
+    position: absolute;
+}

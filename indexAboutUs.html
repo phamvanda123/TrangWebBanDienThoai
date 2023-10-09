@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4317f8d350.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--css animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/myscript.js"></script>
+    <link rel="stylesheet" href="/css/styleAboutUs.css" />
+  </head>
+
+  <body class="mybackgroundMain text-white">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <section class="fixed-top ss-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand text-white" href="index.html">
+            <img
+              src="/images/Brown Mascot Gamer Logo.png "
+              alt="Avatar Logo "
+              style="width: 50px"
+            />
+          </a>
+          <button
+            class="btn btn-danger navbar-toggler border-3 px-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img
+              style="width: 30px"
+              src="images/text-center.svg"
+              alt="menu icon"
+            />
+          </button>
+          <div
+            class="offcanvas offcanvas-start-lg mybackgroundMain"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header d-flex d-lg-none">
+              <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">
+                VD SHOP
+              </h5>
+              <a
+                href="javascript:void(0) "
+                class="text-reset p-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="close"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#FFFFFF"
+                  class="bi bi-x-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  />
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="offcanvas-body p-lg-0 d-flex flex-column">
+              <ul class="navbar-nav d-flex">
+                <li class="nav-item py-2">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                  >
+                    <i class="fa-sharp fa-solid fa-house"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item py-2">
+                  <a
+                    class="nav-link active myShoppingCart"
+                    count="0"
+                    aria-current="page"
+                    href="indexGioHang.html"
+                  >
+                    <i class="fa fa-shopping-cart fa-shake"></i> Giỏ hàng</a
+                  >
+                </li>
+                <li class="nav-item py-2">
+                  <a class="login nav-link active" href="indexlogin.html"
+                    ><i class="fa-solid fa-user fa-bounce"></i> Tài khoản</a
+                  >
+                </li>
+                <li class="nav-item py-2">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="indexAboutUs.html"
+                    >Về chúng tôi</a
+                  >
+                </li>
+                <li class="nav-item py-2">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="indexSanPham.html"
+                    >Sản phẩm</a
+                  >
+                </li>
+                <div class="nav-item1 ms-auto">
+                  <form class="d-flex active nav-link">
+                    <input
+                      class="form-control my-input me-2"
+                      style="width: 100%"
+                      type="text"
+                      placeholder="Tìm Kiếm"
+                    />
+                    <div
+                      class="btn btn-my-basic search-control"
+                      style="width: 20%"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </form>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="ss-aboutUs myfont" style="width: 100vw; overflow: hidden">
+      <div
+        class="container pt-4 aboutUs-1 vh-100 d-flex justify-content-center flex-column"
+      >
+        <div class="row py-4 d-flex justify-content-center">
+          <div class="col-sm-6 d-flex justify-content-center flex-column p-3">
+            <h1 class="text-center mb-3">Giới thiệu về Pham Van Da Shop</h1>
+            <h4 style="text-align: justify">
+              là thành quả nghiên cứu và phát triển của đội ngũ chuyên gia
+              Caesar. Trải nghiệm mua hàng trên trang web một cách tiện nghi và
+              hứng khởi được hình thành bởi sự kết hợp kỹ thuật – mĩ thuật hiện
+              đại. Các sản phẩm bán trên shop đa dạng về phong cách thiết kế,
+              trang thiết bị; phụ kiện tiên tiến, dịch vụ hoàn chỉnh và tận tâm.
+              Tất cả chỉ có tại Pham Van Da shop.
+            </h4>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <div class="img">
+              <div class="img1 actionRight"></div>
+              <div class="img2 actionLeft"></div>
+              <img
+                class="actionTop imgMain1"
+                style="width: 70%; transform: translateY(200)"
+                src="/images/aboutUs2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container mt-5 mb-5 pt-4 aboutUs-2 vh-100 d-flex justify-content-center flex-column"
+      >
+        <div class="row">
+          <div class="col-sm-5 img2-reponsive d-flex justify-content-center">
+            <div class="img" style="position: relative">
+              <div class="img3 actionRight"></div>
+              <div class="img4 actionLeft"></div>
+              <img
+                class="actionBottom imgMain2"
+                style="width: 70%"
+                src="/images/abouUs1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <h2 style="text-align: justify">
+              Chúng tôi luôn luông tập trung vào việc đảm bảo quyền lợi và cố
+              gắng làm cho trãi nghiệm của khách hàng đối với chúng tôi là tốt
+              nhất
+            </h2>
+            <h4 style="text-align: justify">
+              Trang web VD shop tạo một giao diện dễ sử dụng cho người dùng và
+              đảm bảo quyền lợi là tốt nhất cho khách hàng, lấy uy tín làm đầu,
+              với những chính sách trả hàng, chính sách khuyến mãi, giúp cho
+              trãi nghiệm của khách hàng khi đến với trang web của chúng tôi
+              luôn là tốt nhất
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5 pt-4 aboutUs-2">
+        <div class="row my-5 py-5">
+          <div class="col-sm-5 d-flex justify-content-center">
+            <div
+              class="imgMain3"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              style="position: relative"
+            >
+              <div
+                class="img5"
+                data-aos="fade-left"
+                data-aos-duration="750"
+              ></div>
+              <div class="actionImg3">
+                <img
+                  src="/images/AboutUsê.jpg"
+                  style="width: 100%; height: 100%"
+                  alt=""
+                />
+              </div>
+              <img
+                class="actionImg"
+                style="width: 70%; opacity: 0; z-index: -999"
+                src="/images/abouUs1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-5 ms-5">
+            <div class="imgMain2" style="position: relative">
+              <img
+                style="width: 70%; opacity: 0"
+                src="/images/abouUs1.jpg"
+                alt=""
+              />
+              <div class="hinhTron" data-aos="zoom-in-left"></div>
+              <div class="img6 p-3" data-aos="fade-up" data-aos-duration="1500">
+                <h1 class="text-center">Điều khoản sử dụng</h1>
+                <p style="text-align: justify">
+                  Khi quý khách hàng truy cập vào trang website của chúng tôi có
+                  nghĩa là quý khách đồng ý với các điều khoản này. Trang web có
+                  quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào
+                  trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các
+                  thay đổi có hiệu lực ngay khi được đăng trên trang web mà
+                  không cần thông báo trước. Và khi quý khách tiếp tục sử dụng
+                  trang web, sau khi các thay đổi về Điều khoản này được đăng
+                  tải, có nghĩa là quý khách chấp nhận với những thay đổi đó.
+                  Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật
+                  những thay đổi của chúng tôi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 ss-cuoi">
+      <div class="container-fluid ss-end-element" style="width: 100%"></div>
+      <div class="ss-end d-flex justify-content-center">
+        <img
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          style="width: 70%; border-radius: 10px"
+          src="images/Add Description Here.png"
+          alt=""
+        />
+      </div>
+      <div class="btn ket-noi btn-my-basic" data-aos="fade-left">kết nối</div>
+    </section>
+    <footer class="mybackground1">
+      <div class="container px-5 text-white">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="row">
+              <div class="col-sm-3 d-flex justify-content-center flex-column">
+                <img
+                  style="width: 100%"
+                  src="/images/imagesMain/service1.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-9 text-center pt-4">
+                <p class="text-center">
+                  <b>Giao hàng nhanh và an toàn</b> <br />
+                  Nói về dịch vụ của bạn
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="row">
+              <div class="col-sm-3 d-flex justify-content-center flex-column">
+                <img
+                  style="width: 100%"
+                  src="/images/imagesMain/service2.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-9 text-center pt-4">
+                <p class="text-center">
+                  <b>Uy tín chất lượng hàng đầu</b> <br />
+                  Lấy uy tính làm thương hiệu
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="row">
+              <div class="col-sm-3 d-flex justify-content-center flex-column">
+                <img
+                  style="width: 100%"
+                  src="/images/imagesMain/service3.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-9 text-center pt-4">
+                <p class="text-center">
+                  <b>Chính sách hoàn trả trong vòng 24h</b> <br />
+                  Nói về dịch vụ của bạn
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="row">
+              <div class="col-sm-3 d-flex justify-content-center flex-column">
+                <img
+                  style="width: 100%"
+                  src="/images/imagesMain/service4.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-9 text-center pt-4">
+                <p class="text-center">
+                  <b>Đội ngũ hỗ trợ chuyên nghiệp</b> <br />
+                  Hỗ trợ trực tiếp 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4">
+        <div class="row text-white my-2">
+          <div class="col-sm-3 my-2">
+            <h5>Về chúng tôi</h5>
+            <p><a href=""> Cửa hàng</a></p>
+            <p><a href=""> Chính sách bảo mật</a></p>
+            <p><a href=""> Điều khoản sử dụng</a></p>
+            <div class="row">
+              <div class="main">
+                <div class="footer-wrapper">
+                  <a
+                    class="footer-icon facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="30px"
+                      viewBox="0 0 512 512"
+                      fill="#385C8E"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M134.941,272.691h56.123v231.051c0,4.562,3.696,8.258,8.258,8.258h95.159c4.562,0,8.258-3.696,8.258-8.258V273.78h64.519c4.195,0,7.725-3.148,8.204-7.315l9.799-85.061c0.269-2.34-0.472-4.684-2.038-6.44c-1.567-1.757-3.81-2.763-6.164-2.763h-74.316V118.88c0-16.073,8.654-24.224,25.726-24.224c2.433,0,48.59,0,48.59,0c4.562,0,8.258-3.698,8.258-8.258V8.319c0-4.562-3.696-8.258-8.258-8.258h-66.965C309.622,0.038,308.573,0,307.027,0c-11.619,0-52.006,2.281-83.909,31.63c-35.348,32.524-30.434,71.465-29.26,78.217v62.352h-58.918c-4.562,0-8.258,3.696-8.258,8.258v83.975C126.683,268.993,130.379,272.691,134.941,272.691z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="footer-icon twitter"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    <svg
+                      version="1.1"
+                      viewBox="0 0 512 512"
+                      width="35px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#2CA7E0"
+                    >
+                      <g>
+                        <path
+                          d="M485.98,113.141c-16.923,7.506-35.109,12.578-54.197,14.858    c19.48-11.679,34.445-30.171,41.49-52.208c-18.234,10.814-38.43,18.668-59.925,22.899c-17.213-18.341-41.738-29.799-68.88-29.799    c-52.114,0-94.368,42.25-94.368,94.364c0,7.396,0.834,14.598,2.444,21.505c-78.427-3.936-147.962-41.504-194.504-98.597    c-8.123,13.937-12.777,30.146-12.777,47.441c0,32.739,16.659,61.623,41.98,78.546c-15.469-0.491-30.02-4.735-42.742-11.804    c-0.009,0.395-0.009,0.788-0.009,1.188c0,45.721,32.529,83.859,75.698,92.531c-7.918,2.156-16.255,3.311-24.861,3.311    c-6.081,0-11.992-0.593-17.755-1.693c12.009,37.488,46.858,64.773,88.153,65.533c-32.296,25.312-72.985,40.396-117.198,40.396    c-7.617,0-15.128-0.446-22.511-1.32c41.762,26.775,91.365,42.4,144.655,42.4c173.574,0,268.493-143.794,268.493-268.496    c0-4.091-0.092-8.16-0.273-12.208C457.332,148.684,473.33,132.064,485.98,113.141z"
+                          style="fill-rule: evenodd; clip-rule: evenodd"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="footer-icon linkedin"
+                    href="https://www.linkedin.com/company/"
+                    target="_blank"
+                  >
+                    <svg
+                      style="enable-background: new 0 0 64 64"
+                      version="1.1"
+                      viewBox="0 0 64 64"
+                      xml:space="preserve"
+                      width="35px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#0072FF"
+                    >
+                      <g>
+                        <path
+                          d="M8,54.7C8,55.4,8.6,56,9.3,56h9.3c0.7,0,1.3-0.6,1.3-1.3V23.9c0-0.7-0.6-1.3-1.3-1.3H9.3   c-0.7,0-1.3,0.6-1.3,1.3V54.7z"
+                        />
+                        <path
+                          d="M46.6,22.3c-4.5,0-7.7,1.8-9.4,3.7c-0.4,0.4-1.1,0.1-1.1-0.5l0-1.6c0-0.7-0.6-1.3-1.3-1.3h-9.4   c-0.7,0-1.3,0.6-1.3,1.3c0.1,5.7,0,25.4,0,30.7c0,0.7,0.6,1.3,1.3,1.3h9.5c0.7,0,1.3-0.6,1.3-1.3V37.9c0-1,0-2,0.3-2.7c0.8-2,2.6-4.1,5.7-4.1c4.1,0,6,3.1,6,7.6v15.9c0,0.7,0.6,1.3,1.3,1.3h9.3c0.7,0,1.3-0.6,1.3-1.3V37.4C60,27.1,54.1,22.3,46.6,22.3z"
+                        />
+                        <path
+                          d="M13.9,18.9L13.9,18.9c3.8,0,6.1-2.4,6.1-5.4C19.9,10.3,17.7,8,14,8c-3.7,0-6,2.3-6,5.4   C8,16.5,10.3,18.9,13.9,18.9z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="footer-icon youtube"
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                  >
+                    <svg
+                      width="35px"
+                      viewBox="0 0 32 32"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g>
+                        <path
+                          d="M31.67,9.179c0,0-0.312-2.353-1.271-3.389c-1.217-1.358-2.58-1.366-3.205-1.443C22.717,4,16.002,4,16.002,4   h-0.015c0,0-6.715,0-11.191,0.347C4.171,4.424,2.809,4.432,1.591,5.79C0.633,6.826,0.32,9.179,0.32,9.179S0,11.94,0,14.701v2.588   c0,2.763,0.32,5.523,0.32,5.523s0.312,2.352,1.271,3.386c1.218,1.358,2.815,1.317,3.527,1.459C7.677,27.919,15.995,28,15.995,28   s6.722-0.012,11.199-0.355c0.625-0.08,1.988-0.088,3.205-1.446c0.958-1.034,1.271-3.386,1.271-3.386s0.32-2.761,0.32-5.523v-2.588   C31.99,11.94,31.67,9.179,31.67,9.179z"
+                          fill="#E02F2F"
+                        />
+                        <polygon fill="#FFFFFF" points="12,10 12,22 22,16" />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    class="footer-icon instagram"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="35px"
+                      viewBox="0 0 551.034 551.034"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <linearGradient
+                          id="SVGID_1_"
+                          gradientUnits="userSpaceOnUse"
+                          x1="275.517"
+                          y1="4.57"
+                          x2="275.517"
+                          y2="549.72"
+                          gradientTransform="matrix(1 0 0 -1 0 554)"
+                        >
+                          <stop offset="0" style="stop-color: #e09b3d" />
+                          <stop offset="0.3" style="stop-color: #c74c4d" />
+                          <stop offset="0.6" style="stop-color: #c21975" />
+                          <stop offset="1" style="stop-color: #7024c4" />
+                        </linearGradient>
+                        <path
+                          class="insta-square"
+                          style="fill: url(#SVGID_1_)"
+                          d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                                                             c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                                                             C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                                                             c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                                                             c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"
+                        />
+
+                        <linearGradient
+                          id="SVGID_2_"
+                          gradientUnits="userSpaceOnUse"
+                          x1="275.517"
+                          y1="4.57"
+                          x2="275.517"
+                          y2="549.72"
+                          gradientTransform="matrix(1 0 0 -1 0 554)"
+                        >
+                          <stop offset="0" style="stop-color: #e09b3d" />
+                          <stop offset="0.3" style="stop-color: #c74c4d" />
+                          <stop offset="0.6" style="stop-color: #c21975" />
+                          <stop offset="1" style="stop-color: #7024c4" />
+                        </linearGradient>
+                        <path
+                          style="fill: url(#SVGID_2_)"
+                          d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517
+                                                             S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083
+                                                             s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"
+                        />
+
+                        <linearGradient
+                          id="SVGID_3_"
+                          gradientUnits="userSpaceOnUse"
+                          x1="418.31"
+                          y1="4.57"
+                          x2="418.31"
+                          y2="549.72"
+                          gradientTransform="matrix(1 0 0 -1 0 554)"
+                        >
+                          <stop offset="0" style="stop-color: #e09b3d" />
+                          <stop offset="0.3" style="stop-color: #c74c4d" />
+                          <stop offset="0.6" style="stop-color: #c21975" />
+                          <stop offset="1" style="stop-color: #7024c4" />
+                        </linearGradient>
+                        <circle
+                          style="fill: url(#SVGID_3_)"
+                          cx="418.31"
+                          cy="134.07"
+                          r="34.15"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 my-2">
+            <h5>Liên hệ với chúng tôi</h5>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>địa chỉ</span>
+            </p>
+            <p>
+              234 Đường Trần Vĩnh kiết, Phường An Bình, Quận Ninh Kiều, Thành
+              Phố Cần Thơ
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> Da0899027209@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +84792463485</p>
+            <div class="d-flex justify-content-center">
+              <div style="width: 80%">
+                <iframe
+                  class="rounded-2"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.787091116126!2d105.74933739814935!3d10.010138956050602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089b2fe9b31ed%3A0xa3a34eecfd23a44d!2zMlA2WCsyVkMsIEFuIELDrG5oLCBOaW5oIEtp4buBdSwgQ-G6p24gVGjGoSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1664700704417!5m2!1svi!2s"
+                  width="90%"
+                  height="80%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h5>Chăm Sóc khách hàng</h5>
+            <p><a href="">Trung Tâm trợ giúp </a></p>
+            <p><a href="">Hướng dẫn mua hàng </a></p>
+            <p><a href="">các câu hỏi thường gặp </a></p>
+          </div>
+          <div class="col-sm-3">
+            <h5>Tải ứng dụng</h5>
+            <div class="image-footer d-flex justify-content-center">
+              <img
+                src="/images/Brown Mascot Gamer Logo.png"
+                alt=""
+                width="30%"
+              />
+            </div>
+            <p>
+              Tải ứng dụng về điện thoại và đăng ký tài khoản nhận ngay 50.000đ
+            </p>
+            <div class="row">
+              <div class="col-sm-6 d-flex justify-content-center my-2">
+                <img src="images/imagesMain/qr.png" alt="" style="width: 80%" />
+              </div>
+              <div
+                class="col-sm-6 d-flex flex-column justify-content-center mt-3"
+              >
+                <div class="row">
+                  <img
+                    src="/images/imagesMain/play-store.png"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="row mt-3">
+                  <img src="images/imagesMain/app-store.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/PublicJS.js "></script>
+    <script src="/js/aboutUs.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

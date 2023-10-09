@@ -1,0 +1,968 @@
+/* style của navbar */
+
+.myfont {
+    font-family: 'Lobster', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ :root {
+    --main-color: #182870;
+    --sub-color: #EAA023;
+    --color-1: #191F3A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@media (min-width: 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+        background: none;
+        border: none;
+        justify-content: end;
+        color: #191F3A;
+    }
+}
+
+.mybackgroundMain {
+    background-color: var(--main-color);
+}
+
+.mycolorMain {
+    color: var(--sub-color);
+}
+
+.mybackground1 {
+    background-color: var(--color-1);
+}
+
+@media (max-width: 992px) {
+    .offcanvas {
+        width: 250px !important;
+    }
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:430px) {
+    .offcanvas {
+        width: 250px !important;
+    }
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+    .carousel-item>img {
+        height: 35vh !important;
+    }
+    .carousel-2 {
+        height: 35vh !important;
+    }
+    .carousel-1 {
+        height: 35vh !important;
+    }
+    .carousel-1 h1 {
+        font-size: 30px !important;
+    }
+    .text-reponsive {
+        position: absolute;
+        align-items: flex-end;
+        width: 100vw;
+        top: 50px !important;
+        left: 20%;
+    }
+    .carousel-1 h3 {
+        font-size: 15px !important;
+    }
+    .carousel-1 img {
+        position: absolute;
+        width: 35% !important;
+        left: 15% !important;
+    }
+    .carousel-1 .btn {
+        margin-top: 0 !important;
+    }
+    .carousel-1 .img::after {
+        transform: translate(-90%);
+        height: 50% !important;
+        border-width: 10px !important;
+    }
+    .carousel-1 .img::before {
+        transform: translate(-90%);
+        height: 50% !important;
+    }
+    .car .carousel-3 {
+        height: 35vh !important;
+    }
+    .carousel-2 .itemShow2 {
+        left: 0% !important;
+        top: 15%;
+    }
+    .carousel-2 .itemShow5 {
+        left: 95% !important;
+    }
+    .carousel-2 .itemShow1 {
+        left: 90% !important;
+        top: 70%;
+    }
+    .carousel-2 h5 {
+        font-size: 14px !important;
+    }
+    .carousel-2 h3 {
+        font-size: 14px !important;
+    }
+    .image::after {
+        height: 30% !important;
+        transform: translateY(-10px);
+    }
+    .ss-danh-gia img {
+        width: 20% !important;
+    }
+    .carousel-3 {
+        height: 35vh !important;
+    }
+    .carousel-3 h1 {
+        font-size: 20px !important;
+        transform: translate(-25px);
+    }
+    .carousel-3 h2 {
+        font-size: 17px !important;
+    }
+    .text-reponsive1 {
+        position: absolute;
+        margin-top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text-reponsive1 .btn {
+        transform: translateY(300%);
+    }
+    .item-reponsive {
+        position: absolute;
+        width: 70% !important;
+        height: 40% !important;
+        top: 40% !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .like::after {
+        left: 3601% !important;
+    }
+    .fa-heart {
+        top: 2% !important;
+        left: 94% !important;
+        color: white;
+        transform: translateX(200%);
+    }
+    footer>.px-5>.row>.col-sm-3 {
+        width: 25% !important;
+        margin-top: 25px;
+    }
+    footer>.px-5>.row>.col-sm-3 .text-center {
+        font-size: 9px !important;
+    }
+    .ten-hang {
+        font-size: 8px !important;
+    }
+    .btn-thanh-toan {
+        width: 150% !important;
+    }
+}
+
+.nav-item {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.navbar-nav li a {
+    color: white !important;
+}
+
+.myShoppingCart::after {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 80px;
+    display: flex;
+    content: attr(count);
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.nav-item:hover {
+    transform: translate(0, -10%);
+}
+
+.nav-item:hover::before {
+    position: absolute;
+    content: '';
+    background-color: var(--sub-color);
+    height: 70%;
+    top: 30%;
+    transform: translate(0, -18%);
+    z-index: -1;
+    animation: hoverMenu 0.7s forwards;
+    clip-path: polygon(0 0, 87% 0%, 100% 50%, 87% 100%, 0 100%);
+}
+
+@keyframes hoverMenu {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.ss-top>.active::before {
+    width: 100%;
+    height: 100%;
+    background-color: #191F3A;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    animation: navbarOut 0.5s ease forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes navbarOut {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+/* caroulsel */
+
+.carousel-2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.carousel-1 img {
+    top: 42%;
+    left: 30%;
+    width: 37%;
+    position: absolute;
+    animation: xoayHinh 3s infinite linear;
+}
+
+@keyframes xoayHinh {
+    0% {
+        transform: translate(-67%, -20%);
+    }
+    50% {
+        transform: translate(-67%, -24%);
+    }
+    100% {
+        transform: translate(-67%, -20%);
+    }
+}
+
+.carousel-1 .img::before {
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 45%;
+    background-color: #478ac9;
+    border-radius: 50%;
+}
+
+.carousel-1 .img::after {
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 45%;
+    background-color: transparent;
+    border: white solid 20px;
+    border-radius: 50%;
+}
+
+.carousel-1 h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.carousel-1 .btn {
+    outline: solid var(--sub-color) 1px;
+    color: var(--sub-color);
+}
+
+.carousel-1 .btn:hover {
+    background-color: var(--sub-color);
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #25db80 0%, #ac70ed 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/* carouselmain */
+
+.carousel-2>div>img {
+    z-index: 3;
+    width: 30%;
+    animation: LacChuyenDong 2s infinite ease;
+}
+
+@keyframes LacChuyenDong {
+    0% {
+        transform: rotateZ(-7deg);
+    }
+    50% {
+        transform: rotateZ(7deg);
+    }
+    100% {
+        transform: rotateZ(-7deg);
+    }
+}
+
+.carousel-2 .image::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 40%;
+    left: 34%;
+    top: 15%;
+    background-color: red;
+    border: #25db80 solid 10px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.carousel-2 .btn {
+    outline: solid var(--sub-color) 1px;
+    color: var(--sub-color);
+    animation: btn-carousel-A 2s infinite ease;
+    width: 50%;
+}
+
+.btn-my-basic {
+    outline: solid var(--sub-color) 1px;
+    color: var(--sub-color);
+    width: 100%;
+}
+
+.btn-my-active {
+    animation: btn-carousel-A 2s infinite ease;
+    width: 50%;
+}
+
+.btn-my-basic:hover {
+    background-color: var(--sub-color) !important;
+    color: white !important;
+}
+
+@keyframes btn-carousel-A {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.carousel-2 .btn:hover {
+    background-color: var(--sub-color);
+}
+
+.carousel-my-item>.card {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    animation: carousel-my-item-animation 3s infinite;
+}
+
+.carousel-my-item>.card-2 {
+    height: 120%;
+    top: -10%;
+    animation-delay: 0.5s;
+}
+
+.carousel-my-item>.card-3 {
+    animation-delay: 1s;
+}
+
+.carousel-my-item>.card>img {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes carousel-my-item-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.carousel-my-item>.card:hover>img {
+    animation: LacChuyenDong 2s infinite ease;
+}
+
+
+/* footer */
+
+.link-footer>a {
+    text-decoration: none;
+}
+
+
+/* content */
+
+.ss-san-pham .card img {
+    width: 100%;
+}
+
+.ss-san-pham .card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ss-san-pham .card .card-body .btn-xem-chi-tiet {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    transform: translateX(170%);
+}
+
+.ss-san-pham .card .card-body .add-to-cart {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 80%;
+    transform: translateX(-170%);
+}
+
+@keyframes chuyenNut {
+    from {
+        transform: translateX(170%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes chuyenNut1 {
+    from {
+        transform: translateX(-170%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.ss-san-pham .card .card-body .my-3 {
+    position: absolute;
+}
+
+.ss-san-pham .card:hover .card-body .my-5 {
+    position: relative;
+}
+
+.ss-san-pham .card:hover .card-body .btn-xem-chi-tiet {
+    animation: chuyenNut forwards ease 0.5s;
+}
+
+.ss-san-pham .card:hover .card-body .add-to-cart {
+    animation: chuyenNut1 forwards ease 0.5s;
+}
+
+.ss-san-pham .card .card-body .btn:hover {
+    animation: tora forwards ease 1s;
+    transform: translateX(0);
+}
+
+@keyframes tora {
+    from {
+        width: 80%;
+        left: 10%;
+    }
+    to {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+.ss-san-pham .card:hover .card-body .image-item img {
+    transform: rotateZ(-20deg) translateX(-10%);
+    width: 130%;
+    transition: all 1s;
+}
+
+.like::after {
+    content: '';
+    left: 2708%;
+    top: -30%;
+    background-color: var(--main-color);
+    position: absolute;
+    width: 120%;
+    height: 110%;
+    transform: translateX(300%);
+}
+
+.fa-heart {
+    position: absolute;
+    top: 3%;
+    left: 87%;
+    color: white;
+    transform: translateX(300%);
+}
+
+.ss-san-pham .card:hover .fa-heart {
+    animation: chuyenNut 0.5s forwards ease;
+}
+
+.ss-san-pham .card:hover .like::after {
+    animation: chuyenNut 0.5s forwards ease;
+}
+
+.text-gach {
+    text-decoration: line-through;
+}
+
+.ss-san-pham .card::before {
+    content: attr(khuyenmai);
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    background-color: var(--sub-color);
+    width: 18%;
+    height: 15%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+}
+
+.btn-xem-chi-tiet {
+    color: magenta;
+    font-weight: bold;
+    background-color: #f0fc0bd1;
+}
+
+.add-to-cart {
+    color: magenta;
+    font-weight: bold;
+    background-color: #f0fc0bd1;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+/* footer */
+
+footer p {
+    font-size: small;
+    margin-left: 4%;
+    text-align: justify;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer p a {
+    color: var(--sub-color);
+}
+
+
+/* copied */
+
+.main {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper .footer-icon,
+.footer-wrapper .footer-icon:visited {
+    display: inline-block;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+}
+
+.footer-wrapper .footer-icon:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer-wrapper .footer-icon,
+.footer-wrapper .footer-icon:before,
+.footer-wrapper .footer-icon svg {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    outline: 0;
+}
+
+.footer-wrapper .footer-icon:before {
+    top: 90%;
+    left: -110%;
+}
+
+.footer-wrapper .footer-icon:focus,
+.footer-wrapper .footer-icon:hover {
+    background-color: transparent;
+}
+
+.footer-wrapper .footer-icon svg {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    height: 60px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-wrapper .footer-icon.facebook:before {
+    background-color: #3b5998;
+}
+
+.footer-wrapper .footer-icon.twitter:before {
+    background-color: #3cf;
+}
+
+.footer-wrapper .footer-icon.google:before {
+    background-color: #dc4a38;
+}
+
+.footer-wrapper .footer-icon.linkedin:before {
+    background-color: #0072FF;
+}
+
+.footer-wrapper .footer-icon.youtube:before {
+    background-color: #E02F2F;
+}
+
+.footer-wrapper .footer-icon.youtube:hover svg g path,
+.footer-wrapper .footer-icon.youtube:focus svg g path {
+    fill: #fff;
+}
+
+.footer-wrapper .footer-icon.youtube:hover svg g polygon,
+.footer-wrapper .footer-icon.youtube:focus svg g polygon {
+    fill: #E02F2F;
+}
+
+.footer-wrapper .footer-icon.instagram:before {
+    background-color: #C21975;
+}
+
+
+/* .footer-wrapper .footer-icon.instagram:hover svg,
+  .footer-wrapper .footer-icon.instagram:focus svg {
+    filter: invert(200%) sepia(50%) saturate(1) hue-rotate(100deg) brightness(100%) 
+   fill : #FFF;
+  }*/
+
+.footer-icon.instagram:hover svg {
+    fill: #FFF;
+}
+
+.footer-wrapper .footer-icon:focus:before,
+.footer-wrapper .footer-icon:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.footer-wrapper .footer-icon:focus svg,
+.footer-wrapper .footer-icon:hover svg {
+    fill: #fff;
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* các hình carousel */
+
+.imgItemShow {
+    position: absolute;
+    width: 27%;
+    animation: xuaHien 0.5s forwards infinite;
+    animation: carousel-my-item-animation 3s infinite ease 3s;
+}
+
+@keyframes xuaHien {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.itemShow1 {
+    top: 0%;
+    left: -20%;
+    animation-delay: 0.5s;
+}
+
+.itemShow3 {
+    top: 65%;
+    left: -20%;
+    animation-delay: 1s;
+}
+
+.itemShow4 {
+    top: 10%;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+
+.itemShow5 {
+    top: 30%;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    color: red;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-image: url(/images/arrowUp.gif);
+    background-size: cover;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+#myBtn1 {
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 100px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(/images/tin\ nhắn.gif);
+    background-size: cover;
+}
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 370px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    border-radius: 10px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+}
+
+.flip-box-front img {
+    border-radius: 10px;
+}
+
+
+/* Style the back side */
+
+.flip-box-back {
+    background-color: var(--color-1);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* scan text */
+
+.scan-text {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px aqua;
+}
+
+.scan-text::before {
+    color: white;
+    position: absolute;
+    content: "VDSHOP";
+    width: 0%;
+    border-right: 2px solid aqua;
+    text-shadow: 0px 0px 10px aqua, 0px 0px 20px aqua, 0px 0px 30px aqua;
+    overflow: hidden;
+    height: 100%;
+    transition: 1s;
+    animation: myanimation1 4s infinite;
+    text-overflow: clip;
+}
+
+@keyframes myanimation1 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 101%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+/* ss2 */
